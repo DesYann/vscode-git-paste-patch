@@ -1,0 +1,98 @@
+{
+  "name": "vscode-git-paste-patch",
+  "displayName": "Git Paste Patch",
+  "description": "Paste a patch and apply it directly to project files from a side view. Created by a French developer and AI, for developers. Minimalism, efficiency, and practicality above all 🚀",
+  "version": "0.1.0",
+  "publisher": "DesYann",
+  "author": "DesYann",
+  "license": "MIT",
+  "icon": "resources/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DesYann/vscode-git-paste-patch"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "git patch",
+    "git",
+    "apply patch",
+    "codex paste",
+    "codex patch",
+    "codex paste patch",
+    "paste patch",
+    "diff",
+    "clipboard",
+    "unified diff"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "gitPastePatch.openView",
+        "title": "Git Paste Patch: Open view"
+      },
+      {
+        "command": "gitPastePatch.apply",
+        "title": "Git Paste Patch: Apply patch"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "gitPastePatchContainer",
+          "title": "Git Paste Patch",
+          "icon": "resources/activityIcon.svg",
+          "priority": -1000
+        }
+      ]
+    },
+    "views": {
+      "gitPastePatchContainer": [
+        {
+          "type": "webview",
+          "id": "gitPastePatchView",
+          "name": "Git Paste / Apply",
+          "icon": "resources/activityIcon.svg"
+        }
+      ]
+    },
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "gitPastePatch.openView",
+          "when": "true"
+        },
+        {
+          "command": "gitPastePatch.apply",
+          "when": "workspaceFolderCount > 0"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "gitPastePatch.apply",
+          "group": "navigation",
+          "when": "workspaceFolderCount > 0"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p .",
+    "watch": "tsc -w -p ."
+  },
+  "dependencies": {
+    "@vscode/codicons": "^0.0.20",
+    "diff": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/diff": "^7.0.2",
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.0.0"
+  }
+}
