@@ -1,9 +1,5 @@
 # Changelog
 
-## [0.1.1] - 2025-08-20
-
-- New high-contrast Marketplace icon (visible on light & dark themes).
-
 ## [0.1.0] - 2025-08-20
 
 - Initial release.
