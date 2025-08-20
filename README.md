@@ -39,5 +39,12 @@ Notes:
 
 > ⚠️ **Warning**  
 > Applying patches overwrites files in your workspace. Review the diff and make sure you trust the source before proceeding.
-> _Made by a French developer (with a touch of AI), for developers. Minimalism, efficiency, and practicality above all 🚀_
-> _Fait par un développeur français (avec un brin d’IA), pour les développeurs. Minimalisme, efficacité et praticité avant tout 🚀_
+
+## Support
+
+If this extension saves you time:
+
+[![Rate on VS Marketplace](https://img.shields.io/badge/VS%20Marketplace-Rate%20%E2%AD%90-5c2d91)](https://marketplace.visualstudio.com/items?itemName=DesYann.vscode-git-paste-patch&ssr=false#review-details)
+[![GitHub Stars](https://img.shields.io/github/stars/DesYann/vscode-git-paste-patch?style=social)](https://github.com/DesYann/vscode-git-paste-patch)
+
+> _Made by a French developer (with a touch of AI), for developers. Minimalism, efficiency, and practicality above all 🚀_ > _Fait par un développeur français (avec un brin d’IA), pour les développeurs. Minimalisme, efficacité et praticité avant tout 🚀_
